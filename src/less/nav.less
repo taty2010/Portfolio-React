@@ -1,0 +1,56 @@
+.nav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: @name;
+    background-image:  @nav-gradient;
+ 	background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 2.5vh; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    -webkit-transition: 0.5s;
+   -o-transition: 0.5s;
+   @media @desktop{
+    width: 2.5%; /* 0 width - change this with JavaScript */
+   }
+
+   a{
+    padding: 4vh 0 2.5vh 1.8vw;
+    text-decoration: none;
+    font-size: 10vw;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    text-align-last: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    @media @desktop{
+        padding: 6.5vh 0 0 1.8vw;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+   }
+}
+
+@media @desktop{
+    #partialMenu {
+        display: block;
+        padding-top: 18.2vh;
+        a {
+            margin: 0;
+            padding-left: 0;
+            font-size: 1.5vw;
+            color: #5a646f;
+
+            &:hover {
+                color: #fff;
+                font-size: 1.8vw;
+              }
+          }
+      }
+
+}

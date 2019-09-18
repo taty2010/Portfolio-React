@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="shortcut icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <script src="./React App_files/f8b37177f9.js.download"></script><link rel="stylesheet" href="./React App_files/free.min.css" media="all"><link rel="stylesheet" href="./React App_files/free-v4-font-face.min.css" media="all"><link rel="stylesheet" href="./React App_files/free-v4-shims.min.css" media="all">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style>/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #fff;
+  color: #5a646f;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1rem;
+}
+.nav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 3;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: rgba(34, 72, 106, 0.8);
+  background-image: linear-gradient(rgba(50, 150, 250, 0.5), rgba(215, 146, 146, 0.5));
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 2.5vh;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+@media (min-width: 940px) {
+  .nav {
+    width: 2.5%;
+    /* 0 width - change this with JavaScript */
+  }
+}
+.nav a {
+  padding: 4vh 0 2.5vh 1.8vw;
+  text-decoration: none;
+  font-size: 10vw;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  text-align-last: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+}
+@media (min-width: 940px) {
+  .nav a {
+    padding: 6.5vh 0 0 1.8vw;
+    text-decoration: none;
+    font-size: 3vw;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    text-align-last: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+  }
+}
+.hero {
+  background-image: linear-gradient(rgba(34, 72, 106, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.pexels.com/photos/2911527/pexels-photo-2911527.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 95vh;
+  width: 100vw;
+  grid-area: header;
+}
+.heroText {
+  text-align: center;
+}
+.front {
+  color: rgba(215, 146, 146);
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+.name {
+  color: #fff;
+  font-weight: 700;
+  line-height: 17vh;
+  margin-top: 0;
+  padding-top: 30vh;
+}
+</style><script charset="utf-8" src="./React App_files/main.3cc9288ba40e30216fcf.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.5eda6601f71bf617fa5c.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.255b61a6678dd8429ada.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.37a5fc3568b6dbad8943.hot-update.js.download"></script></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div><div id="bar" class="full-width"><nav id="sideNav" class="nav"><div id="smallNav" class="smallNav"></div><div id="partialMenu"><a href="http://localhost:3000/about/about-me.html" alt="About Me"><i id="aboutIcon" class="fas fa-user-circle" aria-hidden="true"></i></a><a href="http://localhost:3000/#html" alt="Skills"><i id="htmlIcon" class="fas fa-file-code" aria-hidden="true"></i></a><a href="http://localhost:3000/#spiritedAway" alt="My Portfolio"><i class="fas fa-briefcase" aria-hidden="true"></i></a><a href="http://localhost:3000/#contact" alt="Contact Me"><i class="fas fa-envelope" aria-hidden="true"></i></a></div></nav></div><div class="hero"><div class="heroText"><h1 class="name">Tatyana Novell</h1><h2 class="front">Future Software Engineer</h2></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./React App_files/bundle.js.download"></script><script src="./React App_files/1.chunk.js.download"></script><script src="./React App_files/main.chunk.js.download"></script>
+
+</body></html>

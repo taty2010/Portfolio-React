@@ -1,0 +1,80 @@
+.hero {
+    background-image: linear-gradient(rgba(34, 72, 106, 0.6), rgba(0, 0, 0, 0.8)),
+      url("https://images.pexels.com/photos/2911527/pexels-photo-2911527.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 95vh;
+    width: 100vw;
+    grid-area: header;
+    @media @desktop{
+        width: 95%;
+        margin-left: 2.8%;
+    }
+  }
+
+  .heroText {
+    // margin-left: 40vw;
+    text-align: center;
+  }
+
+  .front {
+    color: @h-color;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .name {
+    color: @name;
+    font-weight: 700;
+   // margin-left: 4vw;
+    line-height: 17vh;
+    margin-top: 0;
+    padding-top: 30vh;
+  }
+
+  .about {
+    width: 90%;
+    margin: auto 0;
+    display: flex;
+    @media @desktop{
+        height: auto;
+		margin-top: 5vh;
+		margin-bottom: 3vh;
+		margin-left: 2vw;
+    }
+
+         h2 {
+        color: #d79292;
+        padding-left: 2.5vw;
+        font-size: 5vw;
+        width: 50vw;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: bolder;
+        }
+    
+         p{
+        color: #5a646f;
+        line-height: 7.9vh;
+        padding-left:1.5vw;
+        margin-bottom: 4.5vh;
+        text-align: justify;
+        width: 58vw;
+        font-family: 'Montserrat', sans-serif;
+        }
+  }
+
+  .skills{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    .skillBox{
+        width: 32%;
+        height: 100px;
+    }
+  }

@@ -1,0 +1,292 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #fff;
+  color: #5a646f;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+p {
+  font-size: 1.8rem;
+}
+.nav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 3;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  background-image: linear-gradient(rgba(50, 150, 250, 0.5), rgba(215, 146, 146, 0.5));
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 2.5vh;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+@media (min-width: 940px) {
+  .nav {
+    width: 2.5%;
+    /* 0 width - change this with JavaScript */
+  }
+}
+.nav a {
+  padding: 4vh 0 2.5vh 1.8vw;
+  text-decoration: none;
+  font-size: 10vw;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  text-align-last: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+}
+@media (min-width: 940px) {
+  .nav a {
+    padding: 6.5vh 0 0 1.8vw;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 940px) {
+  #partialMenu {
+    display: block;
+    padding-top: 18.2vh;
+  }
+  #partialMenu a {
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.5vw;
+    color: #5a646f;
+  }
+  #partialMenu a:hover {
+    color: #fff;
+    font-size: 1.8vw;
+  }
+}
+.hero {
+  background-image: linear-gradient(rgba(34, 72, 106, 0.6), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/2911527/pexels-photo-2911527.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 95vh;
+  width: 100vw;
+  grid-area: header;
+}
+@media (min-width: 940px) {
+  .hero {
+    width: 95%;
+    margin-left: 2.8%;
+  }
+}
+.heroText {
+  text-align: center;
+}
+.front {
+  color: rgba(215, 146, 146);
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+.name {
+  color: #fff;
+  font-weight: 700;
+  line-height: 17vh;
+  margin-top: 0;
+  padding-top: 30vh;
+}
+.about {
+  width: 90%;
+  margin: auto 0;
+  display: flex;
+}
+@media (min-width: 940px) {
+  .about {
+    height: auto;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    margin-left: 2vw;
+  }
+}
+.about h2 {
+  color: #d79292;
+  padding-left: 2.5vw;
+  font-size: 5vw;
+  width: 50vw;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: bolder;
+}
+.about p {
+  color: #5a646f;
+  line-height: 7.9vh;
+  padding-left: 1.5vw;
+  margin-bottom: 4.5vh;
+  text-align: justify;
+  width: 58vw;
+  font-family: 'Montserrat', sans-serif;
+}
+.skills {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.skills .skillBox {
+  width: 32%;
+  height: 100px;
+}
