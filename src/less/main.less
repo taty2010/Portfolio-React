@@ -21,7 +21,6 @@
   }
 
   .front {
-    color: @h-color;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
   }
@@ -41,9 +40,9 @@
     display: flex;
     @media @desktop{
         height: auto;
-		margin-top: 5vh;
-		margin-bottom: 3vh;
-    margin-left: 3vw;
+		    margin-top: 5vh;
+		    margin-bottom: 3vh;
+        margin-left: 3vw;
     }
 
          h2 {
@@ -51,21 +50,29 @@
         margin-left: 1vw;
         font-size: 5vw;
         width: 50vw;
+        margin-bottom: 2%;
         font-family: 'Montserrat Alternates', sans-serif;
         font-weight: bolder;
         }
     
          p{
         color: #5a646f;
-        line-height: 7.9vh;
+        line-height: 6vh;
         padding-left:1.5vw;
         margin-bottom: 4.5vh;
         text-align: justify;
-        width: 58vw;
+       // width: 58vw;
         font-family: 'Montserrat', sans-serif;
         }
   }
 
+.skillsWrap{
+    h2{
+      font-weight: 800;
+      text-align: center;
+      padding: 2%;
+      border-bottom: 1px dashed gray;
+    }
   .skills{
     width: 100%;
    .flex(center, center, center, row);
@@ -80,3 +87,4 @@
     }
       
   }
+}
