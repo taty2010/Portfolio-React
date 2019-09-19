@@ -1,0 +1,31 @@
+
+{
+"project1": {
+"header": "Samsung S9 Life",
+"description": "This website was created to be a personal portfolio for photographs I have take with my Samsung S9",
+"link": "samsung-portfolio/index.html",
+"img": "https://images.pexels.com/photos/2911545/pexels-photo-2911545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+},
+
+"project2": {
+    "header": "Samsung S9 Life",
+    "description": "This website was created to be a personal portfolio for photographs I have take with my Samsung S9",
+    "link": "samsung-portfolio/index.html",
+    "img": "https://images.pexels.com/photos/2911545/pexels-photo-2911545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+
+"project3": {
+    "header": "Samsung S9 Life",
+    "description": "This website was created to be a personal portfolio for photographs I have take with my Samsung S9",
+    "link": "samsung-portfolio/index.html",
+    "img": "https://images.pexels.com/photos/2911545/pexels-photo-2911545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+
+"project4": {
+    "header": "Samsung S9 Life",
+    "description": "This website was created to be a personal portfolio for photographs I have take with my Samsung S9",
+    "link": "samsung-portfolio/index.html",
+    "img": "https://images.pexels.com/photos/2911545/pexels-photo-2911545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+
+}

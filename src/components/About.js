@@ -7,8 +7,8 @@ function About() {
       <p>My name is Tatyana Novell, I am a Web Content Editor
          currently attending Lambda School to become a Software Engineer.
          Checkout what I've learned so far and take a peak at all the projects I've completed.
-
       </p>
+      <i class="fas fa-portrait"></i>
     </div>
   );
   return <div className="about">{AboutText}</div>;

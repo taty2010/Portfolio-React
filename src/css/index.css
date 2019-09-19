@@ -285,6 +285,11 @@ p {
   border-bottom: 1px dashed gray;
 }
 .skillsWrap .skills {
+  background-image: linear-gradient(rgba(34, 72, 106, 0.5), rgba(0, 0, 0, 0.9)), url(https://images.pexels.com/photos/2911527/pexels-photo-2911527.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -304,4 +309,44 @@ p {
 .skillsWrap .skills .skillBox i {
   font-size: 5rem;
   padding: 2%;
+  color: white;
+}
+.skillsWrap .skills .skillBox h3 {
+  color: white;
+  font-size: 2rem;
+}
+.projectWrapper {
+  width: 95%;
+  margin: 2%;
+}
+.projectWrapper .workBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.projectWrapper .workBox .projContainer {
+  width: 40%;
+  padding: 2%;
+}
+.projectWrapper .workBox .projContainer .imgWrap {
+  width: 100%;
+  padding: 1%;
+}
+.projectWrapper .workBox .projContainer .imgWrap a img {
+  width: 100%;
+  max-height: 250px;
+}
+.desc {
+  line-height: 20px;
+  padding: 4%;
+}
+.desc h3 {
+  padding: 2%;
+}
+.desc p {
+  font-size: 1.5rem;
 }
