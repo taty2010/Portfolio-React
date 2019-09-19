@@ -143,14 +143,15 @@ h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+  color: rgba(215, 146, 146);
 }
 h3 {
   font-size: 1.5rem;
   font-weight: 700;
 }
 p {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .nav {
   height: 100%;
@@ -237,7 +238,6 @@ p {
   text-align: center;
 }
 .front {
-  color: rgba(215, 146, 146);
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }
@@ -266,19 +266,25 @@ p {
   margin-left: 1vw;
   font-size: 5vw;
   width: 50vw;
+  margin-bottom: 2%;
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: bolder;
 }
 .about p {
   color: #5a646f;
-  line-height: 7.9vh;
+  line-height: 6vh;
   padding-left: 1.5vw;
   margin-bottom: 4.5vh;
   text-align: justify;
-  width: 58vw;
   font-family: 'Montserrat', sans-serif;
 }
-.skills {
+.skillsWrap h2 {
+  font-weight: 800;
+  text-align: center;
+  padding: 2%;
+  border-bottom: 1px dashed gray;
+}
+.skillsWrap .skills {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -286,7 +292,7 @@ p {
   align-content: center;
   flex-flow: row;
 }
-.skills .skillBox {
+.skillsWrap .skills .skillBox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -295,7 +301,7 @@ p {
   width: 40%;
   height: 150px;
 }
-.skills .skillBox i {
+.skillsWrap .skills .skillBox i {
   font-size: 5rem;
   padding: 2%;
 }

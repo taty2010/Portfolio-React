@@ -25,11 +25,13 @@ function Skills() {
         <h3>React</h3>
     </div>
   );
-  return <div className="skills">
+  return <div className="skillsWrap"><h2>Skills</h2>
+  <div className="skills">
   {css}
   {HTML}
   {js}
   {react}
+  </div>
   </div>;
 }
 
