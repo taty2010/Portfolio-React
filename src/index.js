@@ -9,6 +9,7 @@ import Sidebar from "./components/Sidebar";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
@@ -18,6 +19,7 @@ ReactDOM.render(
 <About />
 <Skills />
 <Projects />
+<Footer />
 </div>,
 rootElement);
 
