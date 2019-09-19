@@ -8,6 +8,7 @@ import HeaderImg from "./components/HeaderImg";
 import Sidebar from "./components/Sidebar";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
 <HeaderImg />
 <About />
 <Skills />
+<Projects />
 </div>,
 rootElement);
 
