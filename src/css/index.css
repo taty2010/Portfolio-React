@@ -257,7 +257,7 @@ p {
   .about {
     height: auto;
     margin-top: 5vh;
-    margin-bottom: 3vh;
+    margin-bottom: 5%;
     margin-left: 3vw;
   }
 }
@@ -277,6 +277,12 @@ p {
   margin-bottom: 4.5vh;
   text-align: justify;
   font-family: 'Montserrat', sans-serif;
+}
+.about i {
+  font-size: 30rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
 }
 .skillsWrap h2 {
   font-weight: 800;
