@@ -282,11 +282,20 @@ p {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-content: center;
   align-items: center;
-  text-align: center;
+  align-content: center;
+  flex-flow: row;
 }
 .skills .skillBox {
-  width: 32%;
-  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: column;
+  width: 40%;
+  height: 150px;
+}
+.skills .skillBox i {
+  font-size: 5rem;
+  padding: 2%;
 }
