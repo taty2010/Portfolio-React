@@ -2,9 +2,12 @@
     width: 95%;
     margin: 2%;
     .workBox{
-            width: 100%;
-            .flex(space-evenly,center,center,row wrap);
-            text-align: center;
+         width: 100%;
+         .flex(space-evenly,center,center,column);
+         @media @desktop{
+        .flex(space-evenly,center,center,row wrap);
+         }
+         text-align: center;
             .projContainer{
                 width: 40%;
                 padding: 2%;
