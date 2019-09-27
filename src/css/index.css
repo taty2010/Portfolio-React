@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.darken {
+  background: rgba(0, 0, 0, 0.8);
+}
 * {
   box-sizing: border-box;
 }
@@ -143,14 +146,15 @@ h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+  color: rgba(215, 146, 146);
 }
 h3 {
   font-size: 1.5rem;
   font-weight: 700;
 }
 p {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .nav {
   height: 100%;
@@ -216,6 +220,27 @@ p {
     font-size: 1.8vw;
   }
 }
+.openNav {
+  display: contents;
+  align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+}
+.openNav i {
+  margin-left: 0.4vw;
+  margin-top: 1.5vh;
+  position: fixed;
+  z-index: 4;
+  font-size: 1.8vw;
+  color: #fff;
+}
+.openNav i:hover {
+  color: #fdccb4;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  cursor: pointer;
+}
 .hero {
   background-image: linear-gradient(rgba(34, 72, 106, 0.6), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/2911527/pexels-photo-2911527.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
   background-position: bottom;
@@ -225,19 +250,18 @@ p {
   position: relative;
   height: 95vh;
   width: 100vw;
-  grid-area: header;
 }
 @media (min-width: 940px) {
   .hero {
     width: 95%;
-    margin-left: 2.8%;
+    margin-left: 3.5%;
+    margin-top: 1.5%;
   }
 }
 .heroText {
   text-align: center;
 }
 .front {
-  color: rgba(215, 146, 146);
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }
@@ -249,7 +273,7 @@ p {
   padding-top: 30vh;
 }
 .about {
-  width: 90%;
+  width: 95%;
   margin: auto 0;
   display: flex;
 }
@@ -257,36 +281,166 @@ p {
   .about {
     height: auto;
     margin-top: 5vh;
-    margin-bottom: 3vh;
-    margin-left: 2vw;
+    margin-bottom: 5%;
+    margin-left: 3vw;
+    justify-content: center;
+    flex-flow: row;
   }
 }
 .about h2 {
   color: #d79292;
-  padding-left: 2.5vw;
+  margin-left: 1vw;
   font-size: 5vw;
   width: 50vw;
+  margin-bottom: 2%;
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: bolder;
 }
 .about p {
   color: #5a646f;
-  line-height: 7.9vh;
+  line-height: 6vh;
   padding-left: 1.5vw;
   margin-bottom: 4.5vh;
   text-align: justify;
-  width: 58vw;
   font-family: 'Montserrat', sans-serif;
 }
-.skills {
-  width: 100%;
+.about i {
+  font-size: 30rem;
   display: flex;
   justify-content: center;
-  align-content: center;
+  padding-top: 5%;
+}
+.about .aboutTitle {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  align-content: center;
+  flex-flow: column;
+}
+@media (min-width: 940px) {
+  .about .aboutTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-flow: row wrap;
+  }
+}
+.about .about-text {
+  width: 50%;
+}
+.about .profile {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.about .profile img {
+  max-width: 300px;
+  border-radius: 40%;
+}
+.skillsWrap h2 {
+  font-weight: 800;
+  text-align: center;
+  padding: 2%;
+  border-bottom: 1px dashed gray;
+}
+.skillsWrap .skills {
+  background-image: linear-gradient(rgba(34, 72, 106, 0.5), rgba(0, 0, 0, 0.9)), url(https://images.pexels.com/photos/2911527/pexels-photo-2911527.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row;
+}
+.skillsWrap .skills .skillBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: column;
+  width: 40%;
+  height: 150px;
+}
+.skillsWrap .skills .skillBox i {
+  font-size: 8rem;
+  padding: 2%;
+  color: white;
+}
+.skillsWrap .skills .skillBox h3 {
+  color: white;
+  font-size: 2rem;
+}
+.projectWrapper {
+  width: 95%;
+  margin: 2%;
+}
+.projectWrapper .workBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-flow: column;
   text-align: center;
 }
-.skills .skillBox {
-  width: 32%;
-  height: 100px;
+@media (min-width: 940px) {
+  .projectWrapper .workBox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-flow: row wrap;
+  }
+}
+.projectWrapper .workBox .projContainer {
+  width: 40%;
+  padding: 2%;
+}
+.projectWrapper .workBox .projContainer .imgWrap {
+  width: 100%;
+  padding: 1%;
+}
+.projectWrapper .workBox .projContainer .imgWrap a img {
+  width: 100%;
+  max-height: 300px;
+  max-width: 300px;
+}
+.desc {
+  line-height: 20px;
+  padding: 4%;
+}
+.desc h3 {
+  padding: 2%;
+}
+.desc p {
+  font-size: 1.5rem;
+}
+#contact {
+  background-color: #5a646f;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row;
+}
+#contact a {
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 0 4vw;
+}
+#contact a:link,
+#contact a:visited,
+#contact a:active {
+  color: #fff;
+}
+#contact a:hover {
+  color: #d79292;
 }
