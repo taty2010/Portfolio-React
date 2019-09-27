@@ -5,15 +5,17 @@ import NavButton from "./NavButton.js"
 function SideNav() {
   const partialMenu = (
     <div>
-    <NavButton></NavButton>
+    {//<NavButton></NavButton>
+
+    }
     <div id="partialMenu">
-      <a href="about/about-me.html" alt="About Me">
+      <a href="#aboutMe" alt="About Me">
         <i id="aboutIcon" className="fas fa-user-circle" />
       </a>
       <a href="#html" alt="Skills">
         <i id="htmlIcon" className="fas fa-file-code" />
       </a>
-      <a href="#spiritedAway" alt="My Portfolio">
+      <a href="#projects" alt="My Portfolio">
         <i className="fas fa-briefcase" />
       </a>
       <a href="#contact" alt="Contact Me">
