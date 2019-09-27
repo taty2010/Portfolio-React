@@ -5,11 +5,14 @@ import './css/index.css';
 import * as serviceWorker from './serviceWorker';
 
 import HeaderImg from "./components/HeaderImg";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./NavComponents/Sidebar";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import NavChanges from "./NavComponents/NavChanges";
+
+
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(

@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.darken {
+  background: rgba(0, 0, 0, 0.8);
+}
 * {
   box-sizing: border-box;
 }
@@ -217,6 +220,27 @@ p {
     font-size: 1.8vw;
   }
 }
+.openNav {
+  display: contents;
+  align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+}
+.openNav i {
+  margin-left: 0.4vw;
+  margin-top: 1.5vh;
+  position: fixed;
+  z-index: 4;
+  font-size: 1.8vw;
+  color: #fff;
+}
+.openNav i:hover {
+  color: #fdccb4;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  cursor: pointer;
+}
 .hero {
   background-image: linear-gradient(rgba(34, 72, 106, 0.6), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/2911527/pexels-photo-2911527.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
   background-position: bottom;
@@ -297,6 +321,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -344,7 +369,8 @@ p {
 }
 .projectWrapper .workBox .projContainer .imgWrap a img {
   width: 100%;
-  max-height: 250px;
+  max-height: 300px;
+  max-width: 300px;
 }
 .desc {
   line-height: 20px;
@@ -355,4 +381,27 @@ p {
 }
 .desc p {
   font-size: 1.5rem;
+}
+#contact {
+  background-color: #5a646f;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row;
+}
+#contact a {
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 0 4vw;
+}
+#contact a:link,
+#contact a:visited,
+#contact a:active {
+  color: #fff;
+}
+#contact a:hover {
+  color: #d79292;
 }
