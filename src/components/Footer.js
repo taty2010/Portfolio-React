@@ -6,7 +6,7 @@ function Footer(){
     const github = 'https://github.com/taty2010';
 
 	const footer = (
-    <div className="full-width">
+    <div id='contact' className="full-width">
 		<div id="contact-info">
 			<a href={twitter}><i className="fab fa-twitter"></i></a>
 			<a href={linkedin}><i className="fab fa-linkedin-in"></i></a>
