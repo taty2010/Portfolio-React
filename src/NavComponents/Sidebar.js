@@ -12,7 +12,7 @@ function SideNav() {
       <a href="#aboutMe" alt="About Me">
         <i id="aboutIcon" className="fas fa-user-circle" />
       </a>
-      <a href="#html" alt="Skills">
+      <a href="#skills" alt="Skills">
         <i id="htmlIcon" className="fas fa-file-code" />
       </a>
       <a href="#projects" alt="My Portfolio">

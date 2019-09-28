@@ -1,5 +1,5 @@
 import React from "react";
-import {proj1, proj2, proj3, proj4} from '../components/ProjectsLists'
+import {proj1, proj2, proj3, proj4, proj5, proj6} from '../components/ProjectsLists'
 
 
 function Projects(el){
@@ -11,6 +11,8 @@ function Projects(el){
      {proj2}
      {proj3}
      {proj4}
+     {proj5}
+     {proj6}
     </div>
     
     </div>
