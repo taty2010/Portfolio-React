@@ -25,7 +25,7 @@ function Skills() {
         <h3>React</h3>
     </div>
   );
-  return <div className="skillsWrap"><h2>Skills</h2>
+  return <div id='skills'className="skillsWrap"><h2>Skills</h2>
   <div className="skills">
   {css}
   {HTML}
