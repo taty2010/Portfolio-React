@@ -7,9 +7,9 @@
     background-size: cover;
     position: relative;
     height: 95vh;
-    width: 100vw;
+    width: 95%;
+    margin: 0 auto;
     @media @desktop{
-        width: 95%;
         margin-left: 3.5%;
         margin-top: 1.5%;
     }
@@ -23,6 +23,10 @@
   .front {
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    @media @desktop{
+      font-size: 3rem;
+    }
   }
   
   .name {
@@ -36,7 +40,7 @@
 
   .about {
     width: 95%;
-    margin: auto 0;
+    margin: 0 auto;
     display: flex;
     @media @desktop{
         height: auto;
@@ -81,7 +85,12 @@
         }
 
         .about-text{
-          width: 50%;
+          width: 95%;
+          margin-top: 10%;
+          @media @desktop{
+           width: 50%;
+           margin-top: 5%;
+          }
         }
 
         .profile{
@@ -89,13 +98,23 @@
           display: flex;
           justify-content: center;
           img{
-          max-width: 300px;
+          max-width: 200px;
+          max-height: 200px;
           border-radius: 40%;
+            @media @desktop{
+              max-width: 300px;
+              max-height: 300px;
+            }
           }
         }
   }
 
 .skillsWrap{
+  width: 95%;
+  margin: 0 auto;
+  @media @desktop{
+    width: 100%;
+  }
     h2{
       font-weight: 800;
       text-align: center;
@@ -110,15 +129,22 @@
     background-size: cover;
     width: 100%;
     height: 250px;
-   .flex(center, center, center, row);
+    .flex(center, center, center, row wrap);
+    @media @desktop{
+    .flex(center, center, center, row);
+    }
     .skillBox{
       .flex(center, center, center, column);
         width: 40%;
         height: 150px;
         i{
-          font-size: 8rem;
-          padding: 2%;
+          font-size: 6rem;
+          padding: 1%;
           color: white;
+          @media @desktop{
+            font-size: 8rem;
+            padding: 2%;
+          }
         }
         h3{
           color: white;

@@ -249,11 +249,11 @@ p {
   background-size: cover;
   position: relative;
   height: 95vh;
-  width: 100vw;
+  width: 95%;
+  margin: 0 auto;
 }
 @media (min-width: 940px) {
   .hero {
-    width: 95%;
     margin-left: 3.5%;
     margin-top: 1.5%;
   }
@@ -264,6 +264,12 @@ p {
 .front {
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+}
+@media (min-width: 940px) {
+  .front {
+    font-size: 3rem;
+  }
 }
 .name {
   color: #fff;
@@ -274,7 +280,7 @@ p {
 }
 .about {
   width: 95%;
-  margin: auto 0;
+  margin: 0 auto;
   display: flex;
 }
 @media (min-width: 940px) {
@@ -327,7 +333,14 @@ p {
   }
 }
 .about .about-text {
-  width: 50%;
+  width: 95%;
+  margin-top: 10%;
+}
+@media (min-width: 940px) {
+  .about .about-text {
+    width: 50%;
+    margin-top: 5%;
+  }
 }
 .about .profile {
   width: 50%;
@@ -335,8 +348,24 @@ p {
   justify-content: center;
 }
 .about .profile img {
-  max-width: 300px;
+  max-width: 200px;
+  max-height: 200px;
   border-radius: 40%;
+}
+@media (min-width: 940px) {
+  .about .profile img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+.skillsWrap {
+  width: 95%;
+  margin: 0 auto;
+}
+@media (min-width: 940px) {
+  .skillsWrap {
+    width: 100%;
+  }
 }
 .skillsWrap h2 {
   font-weight: 800;
@@ -356,7 +385,16 @@ p {
   justify-content: center;
   align-items: center;
   align-content: center;
-  flex-flow: row;
+  flex-flow: row wrap;
+}
+@media (min-width: 940px) {
+  .skillsWrap .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-flow: row;
+  }
 }
 .skillsWrap .skills .skillBox {
   display: flex;
@@ -368,9 +406,15 @@ p {
   height: 150px;
 }
 .skillsWrap .skills .skillBox i {
-  font-size: 8rem;
-  padding: 2%;
+  font-size: 6rem;
+  padding: 1%;
   color: white;
+}
+@media (min-width: 940px) {
+  .skillsWrap .skills .skillBox i {
+    font-size: 8rem;
+    padding: 2%;
+  }
 }
 .skillsWrap .skills .skillBox h3 {
   color: white;
@@ -399,8 +443,14 @@ p {
   }
 }
 .projectWrapper .workBox .projContainer {
-  width: 40%;
-  padding: 2%;
+  width: 80%;
+  padding: 8% 0;
+}
+@media (min-width: 940px) {
+  .projectWrapper .workBox .projContainer {
+    width: 40%;
+    padding: 2%;
+  }
 }
 .projectWrapper .workBox .projContainer .imgWrap {
   width: 100%;
