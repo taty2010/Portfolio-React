@@ -156,6 +156,13 @@ h3 {
 p {
   font-size: 2rem;
 }
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bebas Neue Regular'), local('BebasNeue-Regular'), url(https://fonts.gstatic.com/s/bebasneue/v1/JTUSjIg69CK48gW7PXoo9Wlhzg.ttf) format('truetype');
+}
 .nav {
   height: 100%;
   /* 100% Full-height */
@@ -182,7 +189,7 @@ p {
 }
 @media (min-width: 940px) {
   .nav {
-    width: 2.5%;
+    width: 15%;
     /* 0 width - change this with JavaScript */
   }
 }
@@ -212,12 +219,18 @@ p {
   #partialMenu a {
     margin: 0;
     padding-left: 0;
-    font-size: 1.5vw;
+    font-size: 2vw;
     color: #5a646f;
+    display: flex;
+    flex-flow: column wrap;
   }
   #partialMenu a:hover {
     color: #fff;
-    font-size: 1.8vw;
+    font-size: 2.5vw;
+  }
+  #partialMenu p {
+    font-family: 'Bebas Neue', cursive;
+    padding: 5% 0;
   }
 }
 .openNav {
@@ -242,7 +255,7 @@ p {
   cursor: pointer;
 }
 .hero {
-  background-image: linear-gradient(rgba(34, 72, 106, 0.6), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/2911527/pexels-photo-2911527.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-image: linear-gradient(rgba(34, 72, 106, 0.6), rgba(0, 0, 0, 0.8)), url("../img/keyboard-hero.jpg");
   background-position: bottom;
   background-attachment: fixed;
   background-repeat: no-repeat;

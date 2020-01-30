@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
 .nav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -15,7 +17,7 @@
     -webkit-transition: 0.5s;
    -o-transition: 0.5s;
    @media @desktop{
-    width: 2.5%; /* 0 width - change this with JavaScript */
+    width: 15%; /* 0 width - change this with JavaScript */
    }
 
    a{
@@ -43,14 +45,19 @@
         a {
             margin: 0;
             padding-left: 0;
-            font-size: 1.5vw;
+            font-size: 2vw;
             color: #5a646f;
-
+            display: flex;
+            flex-flow: column wrap;
             &:hover {
                 color: #fff;
-                font-size: 1.8vw;
+                font-size: 2.5vw;
               }
           }
+        p{
+            font-family: 'Bebas Neue', cursive;
+            padding: 5% 0;
+        }
       }
 
 }

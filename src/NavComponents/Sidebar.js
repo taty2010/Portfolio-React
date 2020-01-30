@@ -1,40 +1,21 @@
 import React from "react";
-import NavButton from "./NavButton.js"
-
+import {Route, Link, NavLink} from 'react-router-dom';
+import HeaderImg from '../components/Home/HeaderImg';
 
 function SideNav() {
-  const partialMenu = (
-    <div>
-    {//<NavButton></NavButton>
 
-    }
-    <div id="partialMenu">
-      <a href="#aboutMe" alt="About Me">
-        <i id="aboutIcon" className="fas fa-user-circle" />
-      </a>
-      <a href="#skills" alt="Skills">
-        <i id="htmlIcon" className="fas fa-file-code" />
-      </a>
-      <a href="#projects" alt="My Portfolio">
-        <i className="fas fa-briefcase" />
-      </a>
-      <a href="#contact" alt="Contact Me">
-        <i className="fas fa-envelope" />
-      </a>
-    </div>
-    </div>
-  );
-  const nav = (
+  return (
     <nav id="sideNav" className="nav">
-      <div id="smallNav" className="smallNav" />
-      {partialMenu}
+      {/* <div id="smallNav" className="smallNav" /> */}
+      <div id="partialMenu">
+        <NavLink to="/"><i id="aboutIcon" className="fas fa-user-circle" /><p>About Me</p></NavLink>
+        <NavLink to="/skills"><i id="htmlIcon" className="fas fa-file-code" /><p>Skills</p></NavLink>
+        <NavLink to="/projects"><i id="htmlIcon" className="fas fa-briefcase" /><p>Projects</p></NavLink>
+        <NavLink to="/contact"><i id="htmlIcon" className="fas fa-envelope" /><p>Contact Me</p></NavLink>
+      </div>
     </nav>
   );
-  return (
-    <div id="bar" className="full-width">
-      {nav}
-    </div>
-  );
+
 }
 
 export default SideNav;
