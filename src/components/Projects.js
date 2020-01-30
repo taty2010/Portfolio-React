@@ -7,6 +7,7 @@ function Projects(el){
 
  return <div id='projects'className = "projectWrapper">
      <div className="workBox">
+    <h2>Projects</h2>
      {proj1}
      {proj2}
      {proj3}
