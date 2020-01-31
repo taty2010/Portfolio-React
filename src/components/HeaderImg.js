@@ -6,7 +6,7 @@ function HeaderImg() {
   const HeroText = (
     <div className="heroText">
       <h1 className="name">Tatyana Novell</h1>
-      <h2 className="front">Future Software Engineer</h2>
+      <h2 className="front">Web Developer</h2>
     </div>
   );
   return <div className="hero">{HeroText}</div>;
